@@ -1,0 +1,53 @@
+[tool.black]
+line-length = 100
+extend-exclude = '''
+(
+    ^/migrations
+    | ^/manage.py
+    | ^/venv
+)
+'''
+
+
+
+
+[tool.pylint.messages_control]
+
+max-line-length = 100
+
+disable = [
+  "missing-docstring",
+  "unused-argument",
+  "no-member",
+  "line-too-long",
+  "too-few-public-methods",
+  "function-redefined",
+  "broad-except",
+  "abstract-method",
+  "too-many-lines",
+  "arguments-differ",
+  "too-many-return-statements",
+  "duplicate-code",
+  "inconsistent-return-statements",
+  "raise-missing-from",
+  "logging-fstring-interpolation",
+  "consider-using-with",
+  "too-many-instance-attributes",
+  "too-many-arguments",
+  "too-many-branches",
+  "too-many-locals",
+  "fixme",
+  "too-many-statements",
+  "invalid-name",
+  "import-error",
+  "unspecified-encoding",
+  "attribute-defined-outside-init"
+]
+
+ignore = [
+    "manage.py",
+    "migrations",
+    "apps.py",
+    "venv"
+]
+
